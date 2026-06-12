@@ -1,0 +1,85 @@
+/* Shared form styles */
+.form-card {
+    background: #fff;
+    border: 0.5px solid #CCCCCC;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 800px;
+}
+.form-group { margin-bottom: 20px; }
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #111;
+    margin-bottom: 7px;
+}
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 0.5px solid #CCCCCC;
+    border-radius: 8px;
+    outline: none;
+    background: #fff;
+    color: #111;
+    font-family: inherit;
+    transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus { border-color: #FF3C00; }
+textarea { resize: vertical; min-height: 220px; line-height: 1.6; }
+
+.checkbox-row { display: flex; align-items: center; gap: 10px; font-size: 14px; color: #333; }
+
+.form-actions { display: flex; gap: 12px; margin-top: 24px; }
+
+
+
+
+.current-img { margin-top: 10px; display: flex; align-items: center; gap: 12px; }
+.current-img img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 0.5px solid #CCCCCC;
+}
+.current-img span { font-size: 12px; color: #555; }
+
+.info-box {
+    background: #fff8e1;
+    border: 0.5px solid #ffe082;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #795548;
+    margin-bottom: 24px;
+}
+
+/* Categories page layout */
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
+.form-card h3 { font-family: Georgia, serif; font-size: 16px; font-weight: 700; color: #111; margin-bottom: 16px; }
+.btn-full { width: 100%; padding: 10px; font-size: 13px; font-weight: 600; background: #FF3C00; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-full:hover { background: #e03400; }
+
+/* Inline edit form */
+.edit-form { display: none; }
+.edit-form.active { display: flex; gap: 8px; align-items: center; }
+.edit-form input { flex: 1; padding: 6px 10px; font-size: 13px; border: 0.5px solid #CCCCCC; border-radius: 6px; outline: none; }
+.edit-form input:focus { border-color: #FF3C00; }
+
+/* Page heading for user dashboard */
+.page-heading { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; color: #111; }
+
+/* Stat cards for admin dashboard */
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.stat-card { background: #fff; border: 0.5px solid #CCCCCC; border-radius: 10px; padding: 20px 24px; }
+.stat-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 8px; }
+.stat-value { font-size: 32px; font-weight: 700; color: #111; }
+.stat-card.accent .stat-value { color: #FF3C00; }
