@@ -64,6 +64,6 @@
 </table>
 
 <div class="pagination">
-    {{ $posts->links() }}
+    {{ $posts->links('vendor.pagination.bootstrap-5') }}
 </div>
 @endsection
